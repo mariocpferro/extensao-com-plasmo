@@ -1,0 +1,16 @@
+.back-pad{
+    background-color: #f8f8f8;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#info{
+    font-weight: 700;
+}
+#blocoNotas{
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}

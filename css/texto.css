@@ -1,0 +1,55 @@
+.back-upper{
+    background-color: #f8f8f8;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#texto{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.botao{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #4b9f7f;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #5ec49d
+}
+
+#info{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#result{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#aux {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copiar{
+    width: 20%;
+    display:none;
+    padding: 5px;
+    background-color: #444444;
+}
