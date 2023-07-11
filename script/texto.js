@@ -1,25 +1,43 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+    // Coloca o botão de transformar a frase em maiúscula clicável
     document.querySelector('#botao1').addEventListener('click', function(){
+
+        // Lê o texto inserido
         let text = document.querySelector('#texto').value;
 
+        // Insere a frase transformada no ID result
         document.querySelector('#result').innerHTML = maiusculo(text);
-        alteracoesCopia();
+
+        // Chama a função para aparecer o botão de copiar
+        botaoCopia();
     });
+
+    // Coloca o botão de transformar a frase em minúscula clicável
     document.querySelector('#botao2').addEventListener('click', function(){
+
+        // Lê o texto inserido
         let text = document.querySelector('#texto').value;
 
+        // Insere a frase transformada no ID result
         document.querySelector('#result').innerHTML = minusculo(text);
-        alteracoesCopia();
+
+        // Chama a função para aparecer o botão de copiar
+        botaoCopia();
     });
 
-    function alteracoesCopia(){
+    // Função que mostra o botão de copiar
+    function botaoCopia(){
+        // Deixa o botão aparente
         document.querySelector('#copiar').style.display = 'block';
+
+        // Ao clicar, copia o texto
         document.querySelector('#copiar').addEventListener('click', function(){
             copiarTexto();
         });
     }
 
+    // Função que copia a frase transformada
     function copiarTexto() {
         // Obtém o elemento da div pelo seu ID
         var divTexto = document.getElementById("result");
@@ -43,9 +61,12 @@ document.addEventListener('DOMContentLoaded', function(){
         document.body.removeChild(inputTemporario);
     }
 
+    // Transformar em maiúsculo
     function maiusculo(text){
         return text.toUpperCase();
     }
+
+    // Transformar em minúsculo
     function minusculo(text){
         return text.toLowerCase();
     }
