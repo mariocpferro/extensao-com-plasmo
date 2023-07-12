@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function(){
         // Obtém o conteúdo digitado no textarea
         var conteudo = textarea.value;
 
-        // Salva o conteúdo em localStorage
+        // Salva o conteúdo em localStorage(armazenamento local)
         localStorage.setItem("blocoNotas", conteudo);
     });
 
-    // Verifica se há um conteúdo salvo em localStorage
+    // Verifica se há um conteúdo salvo em localStorage(armazenamento local)
     if (localStorage.getItem("blocoNotas")) {
         // Se houver, preenche o textarea com o conteúdo salvo
         textarea.value = localStorage.getItem("blocoNotas");

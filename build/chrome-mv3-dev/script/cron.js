@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function(){
     // Função para parar o cronômetro
     function parar() {
         clearInterval(cron);
+
+        // Zera o tempo
         hh = 0;
         mm = 0;
         ss = 0;
-    
         document.getElementById('contador').innerText = '00:00:00';
+
         // Limpar o estado do cronômetro armazenado
         localStorage.removeItem('estadoCronometro');
     }
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (ss == 60) {
             ss = 0;
             mm++;
+
             // Quando chegar em 59m, zera os minutos e acrescenta +1 nas horas
             if (mm == 60) {
                 mm = 0;
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        // Formatação do tempo
+        // Formatação/validação do tempo
         var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
         
         // Mostra o tempo já formatado
@@ -57,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function(){
         return format;
     }
 
-    // Recuperar o estado do cronômetro ao carregar a página
+    // Recuperar o estado do cronômetro ao carregar a página(tempo marcado anteriormente)
     var estadoCronometro = localStorage.getItem('estadoCronometro');
     if (estadoCronometro) {
         var estado = JSON.parse(estadoCronometro);

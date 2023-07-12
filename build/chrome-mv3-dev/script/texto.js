@@ -31,15 +31,15 @@ document.addEventListener('DOMContentLoaded', function(){
         // Deixa o botão aparente
         document.querySelector('#copiar').style.display = 'block';
 
-        // Ao clicar, copia o texto
+        // Coloca o botão de copiar a frase clicável
         document.querySelector('#copiar').addEventListener('click', function(){
             copiarTexto();
         });
     }
 
-    // Função que copia a frase transformada
+    // Função que copia o texto transformada
     function copiarTexto() {
-        // Obtém o elemento da div pelo seu ID
+        // Obtém o elemento da div que contém o texto pelo seu ID
         var divTexto = document.getElementById("result");
 
         // Cria um elemento de input temporário

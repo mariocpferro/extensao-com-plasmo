@@ -8,5 +8,5 @@ As 3 funcionalidades da extensão são:
 
 - Bloco de Anotações: Enquanto estiver vendo algum vídeo, pode anotar os principais tópicos que assistiu/ouviu sem "perder o fio da meada", podendo fechar a página e retornar depois.
 
-- Tempo de Uso: Um cronômetro que visa marcar quanto tempo está utilizando a plataforma de vídeos, porém, o cronômetro só contabiliza enquanto a popup estiver aberto.
+- Tempo de Uso: Um cronômetro que visa marcar quanto tempo está utilizando a plataforma de vídeos, porém, o cronômetro só contabiliza enquanto o popup estiver aberto.
 
